@@ -3,7 +3,7 @@
     import pinlocation from '$lib/assets/icons/pin-localizacao-outline.svg';
 </script>
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
 <div class="caixa-formulario">
@@ -22,7 +22,7 @@
         border: none;
         outline: none;
         align-items: center;
-        width: 280px;
+        width: 30vmin;
         height: 50px;
     }
     .icon-and-label{
@@ -31,7 +31,7 @@
         height: 25px;
     }
     .input-container{
-        width: 339px;
+        width: 36vmin;
         align-self: stretch;
         color: var(--theme-text-color-secondary);
         outline: none;
@@ -44,10 +44,18 @@
     }
     .caixa-formulario{
         display: flex;
-        width: 339px;
+        width: 38vmin;
         padding: 4px 24px;
         gap: 9px;
         border: 1px solid var(--theme-color-light-gray);
         background: var(--theme-color-white);
+    }
+    @media screen and (max-width: 1460px){
+        .caixa-formulario{
+            visibility: hidden;
+        }
+        input{
+            /* width: 20vmin; */
+        }   
     }
 </style>

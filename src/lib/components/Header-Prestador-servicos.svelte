@@ -156,4 +156,26 @@
             display: block;
         }
     }
+    @media (max-width: 380px) {
+        header{
+            padding: 0 16px;
+            justify-content: center;
+            border: 1px solid red;
+            width: 100%;
+          }
+          
+          #desktop-menu{
+            display: none;
+        }
+
+        #mobile-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pescoujobs-logo-retractable {
+            display: block;
+        }
+    }
 </style>

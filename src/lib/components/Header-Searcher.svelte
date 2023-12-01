@@ -45,10 +45,9 @@
 <style>
   .search-bar{
     display: flex;
-    /* width: 1098px; */
+    width: calc(100% - 70vmin);
     align-items: center;
     gap: 30px;
-    flex-shrink: 0;
   }
   header {
     border-bottom: 1px solid var(--theme-border-color-primary);

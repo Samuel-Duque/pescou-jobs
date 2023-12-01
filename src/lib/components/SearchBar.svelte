@@ -23,7 +23,7 @@
 </div>
 <style>
     input{
-        width: 290px;
+        width: 25vmin;
         background-color: var(--theme-color-white);
         border: none;
         outline: none;
@@ -35,7 +35,7 @@
         margin-top: 3px;
     }
     .input-container{
-        width: 207px;
+        width: 25vmin;
         align-self: stretch;
         color: var(--theme-text-color-secondary);
         outline: none;
@@ -52,5 +52,13 @@
         padding: 4px 24px;
         border: 1px solid var(--theme-color-light-gray);
         background: var(--theme-color-white);
+    }
+    @media screen and (max-width:1070px){
+        .caixa-formulario{
+            visibility: hidden;
+        }
+        input{
+            width: 20vmin;
+        }   
     }
 </style>

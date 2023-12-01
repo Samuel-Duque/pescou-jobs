@@ -49,6 +49,8 @@
         <div class="certificado">
             <SwitchButton/>
             <span class="frase-certificado">Certificado PescouJobs</span>
+            <SwitchButton/>
+            <span class="frase-certificado">Certificado PescouJobs</span>
         </div>
     </div>
 </div>
@@ -59,21 +61,19 @@
     <div class="lista-de-cards">
         {#each cards as card (card.id)}
         <div class="card">
-            <Card  />
+            <a href="/perfil_prestador" style="text-decoration: none; color: var(--theme-text-color-primary) ;"><Card  /></a>
         </div>
         {/each}
     </div>
 </div>
 
 <style>
-    
-    .frase-certificado{
-        color: #000;
-        font-family: Poppins;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+
+    .card:hover{
+        border: 2px solid var(--theme-text-color-secondary);
+        border-radius: 6px;
+        transform: scale(1.02);
+        /* transition: 0.3s; */
     }
     .certificado{
         display: flex;
@@ -146,6 +146,7 @@
     }
     .card{
         display: block;
+        transition: transform 0.3s, border 0.3s;
     }
     .lista-de-cards{
         padding-right: 134px;

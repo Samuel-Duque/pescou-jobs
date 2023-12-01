@@ -15,13 +15,13 @@
   datasets: [
     {
 
-      data: [100, 0, 0, 0, 190],
+      data: [0, 0, 0, 0, 0],
       borderColor: '#FFF',
       backgroundColor: '#D9D9D9',
     },
     {
       
-      data: [0,500,320,420,0],
+      data: [100,500,320,420,190],
       borderColor: '#FFF',
       backgroundColor: 'rgba(109, 176, 255, 0.50)',
     }
@@ -37,7 +37,7 @@
                 data: data,
                 options: {
                   
-                  responsive: false,
+                  responsive: true,
                   maintainAspectRatio: false,
                   // @ts-ignore
                   barThickness: 30,
