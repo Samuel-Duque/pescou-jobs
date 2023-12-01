@@ -41,16 +41,20 @@
     <div class="bottom-navbar">
         
         <div class="filtros-profissionais">
-            <DropdownFiltros text="Faixa de preço" text1="R$ 200" text2="R$ 1.000"/>
-            <DropdownFiltros text="Distância" text1="Imbiribeira" text2="Londres"/>
-            <DropdownFiltros text="Classifição" text1="> 4.5 Estrelas" text2="< 4 Estrelas"/>
             <DropdownFiltros text="Tempo de experiência" text1="< 2 Anos" text2="> 5 Anos"/>
+            <DropdownFiltros text="Faixa de preço" text1="R$ 200" text2="R$ 1.000"/>
+            <DropdownFiltros text="Classifição" text1="> 4.5 Estrelas" text2="< 4 Estrelas"/>
+            <DropdownFiltros text="Distância" text1="Imbiribeira" text2="Londres"/>
         </div>
         <div class="certificado">
+            <div class="certificado-body">
             <SwitchButton/>
-            <span class="frase-certificado">Certificado PescouJobs</span>
-            <SwitchButton/>
-            <span class="frase-certificado">Certificado PescouJobs</span>
+            <span class="frase-certificado"><b>Turbo+</b></span>
+            </div>
+            <div class="certificado-body">
+                <SwitchButton/>
+                <span class="frase-certificado">Certificado PescouJobs</span>
+            </div>    
         </div>
     </div>
 </div>
@@ -68,7 +72,17 @@
 </div>
 
 <style>
-
+    .frase-certificado{
+        /* text-align: center; */
+        width: 50%;
+    }
+    .certificado-body{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 1vmin;
+        border: 1px solid aqua
+    }
     .card:hover{
         border: 2px solid var(--theme-text-color-secondary);
         border-radius: 6px;
@@ -78,26 +92,24 @@
     .certificado{
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 1vmin;
     }
     .bottom-navbar{
         display: flex;
-        padding-top: 30px;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
-        align-self: stretch;
     }
     .profissionais-achados{
-        display: flex;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: 500;
         color: var(--theme-color-dark-gray);
-        padding: 30px  0px  44px 134px ;
+        padding: 3vmin  0px  3vmin 134px ;
     }
     .filtros-profissionais{
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 1vmin;
         }
     .texto-profissional{
         color: var(--theme-color-dark-gray);
@@ -131,7 +143,7 @@
     .corpo-descricao{
         display: flex;
         width: auto;
-        padding: 0px 134px;
+        padding: 0px 12vmin;
         flex-direction: column;
         align-items: flex-start;
         gap:23px;
@@ -139,28 +151,98 @@
         padding-bottom: 23px;
         border-bottom: 1px solid var(--theme-color-light-gray);
     }
+
     .bloco-inferior{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        max-width: 1400px;
-        padding: 0 10px;
+        width: 100%;
     }
     .card{
-        display: block;
+        /* display: block; */
+
         transition: transform 0.3s, border 0.3s;
     }
     .lista-de-cards{
-        padding-right: 134px;
-        padding-left: 134px;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-row-gap: 40px;
-        grid-column-gap: 24px;
+        grid-row-gap: 4vmin;
+        grid-column-gap: 2.5vmin;
+        padding: 0 12vmin;
         width: 100%;
 
     }
 
+@media screen and (max-width: 1300px) {
+    .card:hover{
+        border: 0px;
 
-    @media screen and (max-width: 600px) {
+    }
+    .certificado-body{
+        width: fit-content;
+    }
+    .bottom-navbar{
+        display: grid;
+        gap: 1vmin;
+    }
+    .certificado{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1vmin;
+    }
+    .filtros-profissionais{
+        display: grid;        
+        grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+    
+    .profissionais-achados{
+        font-size: 1.5rem;
+        padding: 30px;
+        padding-bottom: 15px;
+        justify-content: center;
+    }
+    .lista-de-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* align-items: center; */
+        /* justify-items: center; */
+        padding: 1vmin 4vmin;
+    }
+
+    .header-profissional{
+        font-size: 52px;
+    }
+    .texto-profissional{
+        font-size: 18px;
+    }
+    .filtros-profissionais{
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .bottom-navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+    .filtros-profissionais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        /* border: 1px solid aqua; */
+
+    }
+    .lista-de-cards{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 4vmin;
+    }
     .corpo-descricao, .bloco-inferior{
         padding: 0 10px;
     }
@@ -176,45 +258,4 @@
     }
     
 }
-
-@media screen and (max-width: 1000px) {
-
-    .filtros-profissionais{
-        padding: 20px;
-        display: grid;
-        margin-right: 200px;
-        grid-template-columns: repeat(2, 1fr);
-        
-
-    }
-    
-    .corpo-descricao, .bloco-inferior{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .profissionais-achados{
-        font-size: 1.5rem;
-        padding: 30px;
-        padding-bottom: 15px;
-        justify-content: center;
-    }
-    .lista-de-cards{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        padding: 20px;
-    }
-
-    .header-profissional{
-        font-size: 52px;
-    }
-    .texto-profissional{
-        font-size: 18px;
-    }
-    .filtros-profissionais{
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-}
-    
 </style>

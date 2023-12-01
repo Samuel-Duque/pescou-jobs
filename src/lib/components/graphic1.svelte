@@ -53,10 +53,10 @@
                                 display: false,
                             },
                             ticks: {
-                              font: {
-                                size: 16,
-                                family: 'Poppins'
-                              },
+                              // font: {
+                              //   // size: 16,
+                              //   // family: 'Poppins'
+                              // },
                         },
                       },
                         y: {
@@ -64,10 +64,10 @@
                                 display: true,
                             },
                             ticks: {
-                              font: {
-                                size: 16,
-                                family: 'Poppins'
-                              },
+                              // font: {
+                              //   // size: 16,
+                              //   // family: 'Poppins'
+                              // },
                               padding:20,
                             stepSize: 20,
                             maxTicksLimit: 4,

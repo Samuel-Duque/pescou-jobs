@@ -13,10 +13,10 @@
         <div class="dropdown-filtro">
             <ul >
                 <li class="dropdown">
-                    <a href='/' class="head-dropdown"><b>{text}</b></a>
+                    <a href='/profissionais' class="head-dropdown"><b><span class="head">{text}</span></b></a>
                     <div class="menu">
-                        <a href="/ ">{text1}</a> 
-                        <a href="/">{text2}</a> 
+                        <a href="/profissionais">{text1}</a> 
+                        <a href="/profissionais">{text2}</a> 
                     </div>
                     <img src={downarrow} alt="">
                 </li>
@@ -26,22 +26,17 @@
 </div>
 
 <style>
-   
+
    .dropdown{
     display: flex;
-    flex-direction: row;
-    padding: 4px 16px;
-    gap: 10px;
-    align-items: center;
+    width: fit-content;
+    height: fit-content;
     border: 1px solid var(--theme-color-light-gray);
-    background: var(--theme-color-white);
     position: relative;
     border-radius: 8px;
     line-height: 24px;
-    min-height: 48px;
-    min-width: 50px;
-    padding: 12px 16px;
-
+    padding:12px;
+    gap: 10px;
 
 }
 
@@ -56,14 +51,11 @@
 }
 
 .head-dropdown{
-    
+    white-space: nowrap;
     color:var(--theme-font-primary);
     text-decoration: none;
-    padding-right: 30;
     text-align: justify;
     display: block;
-    padding: 10px;
-
 }
 
 .dropdown .menu a{
@@ -119,7 +111,6 @@
 }
     .dropdown{
         text-wrap: nowrap;
-        margin: auto;
         
     }
     .head-dropdown, .dropdown .menu a {

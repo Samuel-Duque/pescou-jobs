@@ -198,13 +198,25 @@
             <span class="numero-avaliacoes">(1)</span>
           </div>
         </div>
+        <div class="avaliacoes-texto_2">
+          <div class="avaliacoes-texto-head"><span id="header"><h2><b>Avaliações</b></h2></span></div>
+          <div class="avaliacoes-texto-body">
+            <ComponentFeedback_2/>
+            <ComponentFeedback_2/>
+            <ComponentFeedback_2/>
+            <ComponentFeedback_2/>
+          </div>
+        </div>
       </div>
     </div>
 
 </body>
 
 <style>
-   
+   .avaliacoes-texto_2{
+    display: none;
+    padding: 20px;
+   }
   .avaliacoes-texto-head{
     display: flex;
     padding: 10px;
@@ -227,7 +239,7 @@
   }
   .calendario {
     right: 15%;
-    top: 50%;
+    /* top: 55%; */
     position: absolute;
     z-index: 1;
     display: flex;
@@ -453,7 +465,14 @@
       padding: 10px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
+      .avaliacoes-texto_2{
+        padding:20px;
+        display: block;
+      }
+      .avaliacoes-texto{
+        display: none;
+      }
       .botao-portfolio{
         margin-top: 20px;
         width: 100%;
@@ -479,10 +498,12 @@
         align-items: center;
       }
       .avaliacoes {
+        position: relative;
         margin-left: 0vmin;
         
       }
       .container-agendar {
+        position: relative;
         margin-top: 5%;
         margin-left: 0%;
         margin-bottom: -10%;

@@ -101,7 +101,7 @@
   .background {
     width: 100%;
     /* background-image: url({backgroundImage}); */
-    padding: 80px 100px 100px 100px;
+    padding: 80px 100px 100px 80px;
     /* background-position: -25vw; */
     background-position: center;
     background-repeat: no-repeat;

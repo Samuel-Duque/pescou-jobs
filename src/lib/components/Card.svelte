@@ -39,6 +39,10 @@
 </div>
 
 <style>
+    .imagem-banner2,.imagem-banner{
+        width: 100%;
+    }
+
     .localizacao-nome{
         font-weight: 600;
     }
@@ -89,12 +93,12 @@
     }
     .corpo-card{
         display: flex;
-        width: 394px;
-        padding: 30px 20px;
+        width: 100%;
+        padding: 2vmin 2vmin;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        gap: 20px;
+        gap: 2vmin;
         border-radius: 5px;
         border: 1px solid #CECECE;
         background: #FFF;
@@ -130,10 +134,10 @@
             }
             .corpo-card{
                 width: 100%;
-                padding: 15px 10px;
+                padding: 3.5vmin 3vmin;
             }
             .nome-prestador{
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
 </style>
