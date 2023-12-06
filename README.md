@@ -27,6 +27,8 @@ A busca por prestadores de serviços qualificados muitas vezes é demorada e ins
 - **Tecnologias Utilizadas:**
   - Frontend: HTML, CSS, JavaScript
   - Framework Frontend: Svelte
+ 
+  ### WIP
   - Banco de Dados: Firebase Firestore
   - Autenticação: Firebase Authentication
 
