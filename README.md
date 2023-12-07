@@ -70,4 +70,4 @@ O desenvolvimento do PescouJobs continuará com a implementação e aprimorament
 
 # Pessoas Por Trás do YouMe
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/Samuel-Duque" width=115><br><sub>Samuel Duque</sub>](https://github.com/Samuel-Duque) | [<img loading="lazy" src="https://avatars.githubusercontent.com/Tiago-msC" width=115><br><sub>Tiago Cunha</sub>](https://github.com/Tiago-msC) | 
-| --- |
+| --- | --- |
