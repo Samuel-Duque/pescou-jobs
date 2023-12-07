@@ -66,3 +66,8 @@ A busca por prestadores de serviços qualificados muitas vezes é demorada e ins
 ## Próximos Passos
 
 O desenvolvimento do PescouJobs continuará com a implementação e aprimoramento dos recursos listados no backlog do produto, garantindo uma experiência eficiente e segura para os usuários 😃🛠️🔍
+
+
+# Pessoas Por Trás do YouMe
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/Samuel-Duque" width=115><br><sub>Samuel Duque</sub>](https://github.com/Samuel-Duque) | [<img loading="lazy" src="https://avatars.githubusercontent.com/Tiago-msC" width=115><br><sub>Tiago Cunha</sub>](https://github.com/Tiago-msC) | 
+| --- |
