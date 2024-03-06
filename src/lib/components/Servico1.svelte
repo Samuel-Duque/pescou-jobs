@@ -17,6 +17,8 @@ export let id;
                 <span>Serviço</span>
             </div>
         </div>
+
+        
         <div class="id-preco-status">
             <span class="id">{id}</span>
             <span class="preco">R$ 60,00</span>

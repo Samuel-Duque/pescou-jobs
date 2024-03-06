@@ -156,7 +156,6 @@
 
 <style>
   .container-3-4-Grafico{
-    border: 1px solid pink;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,10 +165,8 @@
     display: flex;
     gap: 121px;
     width: auto;
-    border: 1px solid teal 
   }
   .head-tabela-servicos .head-direita{
-    border: 1px solid yellow;
     display: flex;
     align-items: center;
     width: auto;
@@ -177,7 +174,6 @@
     gap: 10.5em;
   }
   .head-tabela-servicos .head{
-    border: 1px solid slateblue;
     display: flex;
     position: sticky;
     top:0;
@@ -368,13 +364,11 @@
     margin-left: 75px;
     margin-bottom: 16px;
     justify-content: space-between;
-    border: 1px solid aquamarine;
   }
   .head{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
   }
   .filtro{
     width: 110px;
@@ -390,15 +384,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
-
   }
   .contagem-porcentagem_2{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
-  }
+    }
   .contagem-porcentagem{
     display: flex;
     align-items: center;
@@ -440,7 +431,6 @@
     column-gap: 46px;
     justify-content: space-between;
     gap: 32px;
-    border: 1px solid red;
   }
 
   .subtitulo{
@@ -457,7 +447,6 @@
   }
   .corposuperior{
     padding: 56px 60px;
-    border: 1px solid blue;
   }
   a{
     text-decoration: none;
@@ -473,7 +462,7 @@
     font-size: 1rem;
     color: var(--theme-text-color-secondary);
   }
-@media screen and (max-width:1400px){
+@media screen and (max-width:1600px){
   .head-tabela-servicos .img{
     display: none;
   }
@@ -500,7 +489,6 @@
     margin-top: 160px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green;
   }
   .corpo-inferior div{
     width: calc(100%);

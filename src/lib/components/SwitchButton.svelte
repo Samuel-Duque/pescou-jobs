@@ -1,13 +1,25 @@
+<script lang="ts">
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
+
+    export let checked: boolean = false;
+
+    function handleChange() {
+        dispatch('change', { checked: !checked });
+    }
+</script>
+
 <label class="switch">
-    <input type="checkbox">
+    <input type="checkbox" bind:checked={checked} on:change={handleChange}>
     <span class="slider round"></span>
 </label>
+
 
 <style>
     .switch { 
     position: relative;
     display: flex;
-    width: 60px;
+    width: 65px;
     height: 34px;
 }
 .switch input {

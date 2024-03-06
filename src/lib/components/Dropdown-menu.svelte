@@ -22,9 +22,6 @@
     nav{
         margin: 0;
         padding: 0;
-
-        font-family: 'Poppins';
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;

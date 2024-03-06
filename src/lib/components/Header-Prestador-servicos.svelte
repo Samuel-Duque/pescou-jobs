@@ -10,12 +10,16 @@
   import imagem_perfil from "$lib/assets/icons/imagem-perfil2.svg";
   import help_icon from "$lib/assets/icons/help-icon.svg";
   import messages_icon from "$lib/assets/icons/messages-mail.svg";
+  import SubmenuPerfil from "./submenu-perfil.svelte";
   
-
+  let show = false;
   const handleNavigateLogin = () => {
     window.location.href = "/auth/login";
   };
-
+  function changeShowState() {
+		show = !show;
+    console.log(show);
+	}
 </script>
 
 <header>
@@ -34,7 +38,14 @@
         <li><img src={help_icon} alt=""></li>
 
       </ul>
-        <img src={imagem_perfil} alt="" style="height: 50px;width:50px" class="foto">
+        <button class="foto-perfil" on:click={changeShowState} >
+          <img src={imagem_perfil} alt="" style="height: 50px;width:50px" class="foto">
+        </button>
+        {#if show}
+        <div class="submenu-perfil-flutuante">
+          <SubmenuPerfil />
+        </div>
+        {/if}
     </div>
     
   </nav>
@@ -44,6 +55,25 @@
 </header>
 
 <style>
+  button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .submenu-perfil-flutuante{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 3%;
+    width: 200px;
+    z-index: 3;
+    background-color: var(--theme-white-color);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+  }
   .foto{
     border-radius: 50%;
     border: 1.5px solid var(--theme-text-color-primary);
