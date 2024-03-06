@@ -38,7 +38,7 @@
     
   </nav>
   <nav id="mobile-menu">
-    <img src={logoRetractable} alt="Logo PescouJobs" class="pescoujobs-logo-retractable" />
+    <a href="/"><img src={logoRetractable} alt="Logo PescouJobs" class="pescoujobs-logo-retractable" /></a>
   </nav>
 </header>
 
