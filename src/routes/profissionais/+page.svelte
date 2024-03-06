@@ -124,10 +124,9 @@
     gap: 1vmin;
   }
   .card:hover {
-    border: 2px solid var(--theme-text-color-secondary);
     border-radius: 6px;
-    transform: scale(1.02);
-    /* transition: 0.3s; */
+    transform: scale(1.045);
+    transition: 0.3s;
   }
   .certificado {
     display: flex;
@@ -259,7 +258,6 @@
     }
   }
   @media screen and (max-width: 600px) {
-
     .certificado-body {
       padding-bottom: 20px;
     }

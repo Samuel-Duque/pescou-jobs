@@ -7,6 +7,14 @@
   import CardContador from "$lib/components/card-contador.svelte";
   import Teste from "$lib/components/teste.svelte";
   import trabalhadoresImage from "$lib/assets/trabalhadores.svg";
+  import Footer from "$lib/components/Footer.svelte";
+  import "aos/dist/aos.css";
+  import AOS from "aos";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    AOS.init();
+  });
 
   const handleNavigateProfessionals = () => {
     window.location.href = "/profissionais";
@@ -60,7 +68,7 @@
 <div class="corpo-inferior">
   <CardContador />
 </div>
-<div class="div_sobre">
+<div class="div_sobre" data-aos="fade-in" data-aos-duration="1000">
   <div class="div_sobre_esquerda">
     <h1>Sobre Nós:</h1>
     <p>
@@ -75,6 +83,7 @@
     <img src={trabalhadoresImage} alt="Trabalhadores" width="60%" />
   </div>
 </div>
+<Footer />
 
 <style>
   .div_sobre_direita {
